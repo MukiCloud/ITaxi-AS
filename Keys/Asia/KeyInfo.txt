@@ -1,0 +1,11 @@
+Play Account
+
+帳號 oic.icrd@gmail.com
+密碼 Asiaoic3500
+驗證 0973773152
+
+ASIA.keystore：因太久未更版，故尚未進行Google Play應用程式簽署，所以僅有一組原始密碼「CHT-asia」
+※再請協助進行Google Play應用程式簽署，密碼設定為「muki-asia」
+
+14822 11214
+14822 13382

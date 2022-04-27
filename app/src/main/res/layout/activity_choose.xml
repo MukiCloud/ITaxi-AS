@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ActivityChoose">
+
+    <Button
+        android:id="@+id/BT_CHO_Web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web"/>
+
+    <Button
+        android:id="@+id/BT_CHO_WebMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web(Menu)"/>
+
+    <Button
+        android:id="@+id/BT_CHO_Share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share"/>
+
+    <Button
+        android:id="@+id/BT_CHO_Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Version.7 20180815"
+        android:textSize="@dimen/CM_TextSizeNormalB"/>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Dialog透明背景 -->
+    <style name="TranStyle" parent="@android:style/Theme.Dialog">
+        <!-- 邊框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 整個 layout 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 拿掉標題 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@drawable/dialog_shape</item>
+        <!-- 由 XML 設定 Dialog 視窗是否變暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 亮度從 0 到 1.0 -->
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowShowAnimation">@anim/scale_in</item>
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="DialogFloat" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ScaleAnimation</item>
+        <item name="android:windowBackground">@drawable/back_trans_c_corner_10</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DialogFloatFast" parent="DialogFloat">
+        <item name="android:windowAnimationStyle">@style/ScaleFastAnimation</item>
+    </style>
+
+    <style name="DialogSWebProgress" parent="DialogFloat">
+        <item name="android:windowAnimationStyle">@style/FadeAnimation</item>
+        <item name="android:windowBackground">@color/colorTrans</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DialogWelcome" parent="DialogFloat">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/ScaleFadeAnimation</item>
+    </style>
+
+
+    <style name="DialogMenu" parent="DialogFloat">
+        <item name="android:windowAnimationStyle">@style/ScaleFastAnimation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="ScaleAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="ScaleFastAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_in_fast</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_fast</item>
+    </style>
+
+    <style name="FadeAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="ScaleFadeAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_fade_out</item>
+    </style>
+
+</resources>

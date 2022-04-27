@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- http://gelitenight.github.io/android/2017/01/29/solve-FileUriExposedException-caused-by-file-uri-with-FileProvider.html -->
+    <files-path
+        name="files_path"
+        path="/" />
+    　　
+    <external-path
+        name="external_path"
+        path="/" />
+
+    <external-files-path
+        name="external_files_path"
+        path="/" />
+</paths>

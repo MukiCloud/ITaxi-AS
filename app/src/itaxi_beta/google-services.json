@@ -1,0 +1,479 @@
+{
+  "project_info": {
+    "project_number": "391744377267",
+    "firebase_url": "https://barrierfree-215005.firebaseio.com",
+    "project_id": "barrierfree-215005",
+    "storage_bucket": "barrierfree-215005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:72b791949f730d8d713bc6",
+        "android_client_info": {
+          "package_name": "com.itaxi.passenger.android.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:0834bc7bb284344f713bc6",
+        "android_client_info": {
+          "package_name": "hantek.car4u.airport.driver.bate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:a5a9c7a7090cfdb2713bc6",
+        "android_client_info": {
+          "package_name": "hantek.car4u.airport.driver.gancheng"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:39fb07d167611140713bc6",
+        "android_client_info": {
+          "package_name": "hantek.car4u.airport.driver.gancheng.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:26ac129c79777c1e713bc6",
+        "android_client_info": {
+          "package_name": "hantek.car4u.airport.driver.iitl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:f4e2aefbe2940d46713bc6",
+        "android_client_info": {
+          "package_name": "hantek.car4u.airport.driver.prod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:456bf2fdab46ded0713bc6",
+        "android_client_info": {
+          "package_name": "tw.com.hantek.car4u.passenger.airport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:f98983ffe8de3167713bc6",
+        "android_client_info": {
+          "package_name": "tw.com.hantek.car4u.passenger.airportbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:aa4762ea12ed801e713bc6",
+        "android_client_info": {
+          "package_name": "tw.com.hantek.car4u.passenger.barrearfree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:b0cd3efd5f0d3849713bc6",
+        "android_client_info": {
+          "package_name": "tw.com.hantek.car4u.passenger.barrearfree.gancheng"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:93e9e5f123c56ca4713bc6",
+        "android_client_info": {
+          "package_name": "tw.com.hantek.car4u.passenger.barrearfree.ganchengbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:2357668ed9364b63713bc6",
+        "android_client_info": {
+          "package_name": "tw.com.hantek.car4u.passenger.barrearfree.iitl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391744377267:android:c87d23c5366eb7ef713bc6",
+        "android_client_info": {
+          "package_name": "tw.com.hantek.car4u.passenger.barrearfreebeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZprFZBjzsGaAtg0k9o7KqA3kmE1Su4dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391744377267-hi1puv1upfdfmgsifnrt87qn8b506arr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "391744377267-3jh24seksr0n9ko5knmh0eh44gppuvpt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airport.taxi.passenger.beta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

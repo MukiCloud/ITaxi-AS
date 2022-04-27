@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Common-->
+    <dimen name="CM_TextSizeSmallB">10sp</dimen>
+    <dimen name="CM_TextSizeSmallC">12sp</dimen>
+    <dimen name="CM_TextSizeNormal">14sp</dimen>
+    <dimen name="CM_TextSizeNormalA">16sp</dimen>
+    <dimen name="CM_TextSizeNormalB">18sp</dimen>
+    <dimen name="CM_TextSizeBig">20sp</dimen>
+    <dimen name="CM_TextSizeBigA">22sp</dimen>
+    <dimen name="CM_TextSizeBigB">24sp</dimen>
+    <dimen name="CM_TextSizeBigC">26sp</dimen>
+    <dimen name="CM_TextSizeTitleBig">30sp</dimen>
+    <dimen name="CM_TextSizeTitleBigA">30sp</dimen>
+    <dimen name="CM_TextSizeTitleBigB">33sp</dimen>
+    <dimen name="CM_TextSizeTitleBigC">36sp</dimen>
+    <dimen name="CM_TextSizeVeryBig">40sp</dimen>
+    <dimen name="CM_MinHeightA">30dp</dimen>
+    <dimen name="CM_MinHeightB">35dp</dimen>
+    <dimen name="CM_MinHeightC">40dp</dimen>
+    <dimen name="CM_MinHeightD">45dp</dimen>
+    <dimen name="CM_MinHeightE">50dp</dimen>
+    <!--Common Margin-->
+    <dimen name="CM_Margin2">2dp</dimen>
+    <dimen name="CM_Margin5">5dp</dimen>
+    <dimen name="CM_MarginA">10dp</dimen>
+    <dimen name="CM_MarginB">15dp</dimen>
+    <dimen name="CM_MarginC">20dp</dimen>
+    <dimen name="CM_MarginD">25dp</dimen>
+    <dimen name="CM_MarginE">30dp</dimen>
+    <dimen name="CM_MarginF">35dp</dimen>
+    <dimen name="CM_MarginG">40dp</dimen>
+    <dimen name="CM_MarginH">45dp</dimen>
+    <dimen name="CM_MarginI">50dp</dimen>
+
+    <dimen name="widget_margin">0dp</dimen>
+</resources>

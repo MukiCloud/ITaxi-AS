@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/PW_PGS"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        wheel:matProg_fillRadius="true"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <ImageView
+        android:id="@+id/IMV_PGS"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_loading"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TV_PGS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/CM_MarginA"
+        android:textColor="@color/colorTransGray9"
+        android:textSize="@dimen/CM_TextSizeNormalA"
+        android:visibility="gone" />
+
+</LinearLayout>

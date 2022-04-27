@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mukicloud.mukitest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /><!-- 結束Chrome用 -->
+    <!-- Beacon -->
+    <uses-permission android:name="android.permission.BACKGROUND_LOCATION" />
+    <!-- Pushy Permissions -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 清除用戶Data -->
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA " />
+    <!-- 定位通知 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!--弹出横幅通知的权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- 防止電池優化 -->
+    <uses-permission  android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+
+    <application
+        android:name=".SApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_app"
+        android:roundIcon="@mipmap/ic_app_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activity.ActivityAutoGo"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true"> <!--URL Scheme启动-->
+                <!--必有项-->
+                <action android:name="android.intent.action.VIEW" />
+                <!--如果希望该应用可以通过浏览器的连接启动，则添加该项-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--表示该页面可以被隐式调用，必须加上该项-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--协议部分 https://www.itread01.com/content/1541120003.html -->
+                <data android:scheme="@string/schema_name" />
+                <data android:scheme="@string/schema_name_test" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Activity.ActivityWeb"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <!--FCM -->
+        <service
+            android:name=".FCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <!--Loc -->
+        <service android:name=".SFunc.SLocService" />
+
+        <!--SForegroundService -->
+        <service
+            android:name=".SFunc.SForegroundService"
+            android:persistent="true"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

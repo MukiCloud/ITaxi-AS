@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">MukiTest</string>
+    <!--FB Login API-->
+    <string name="facebook_app_id">1173446326121337</string>
+    <string name="fb_login_protocol_scheme">fb1173446326121337</string>
+    <!-- Line Login -->
+    <string name="line_channel_id">1653777296</string>
+    <!-- Google Login -->
+    <string name="google_oauth">test</string>
+    <!--FCM-->
+    <string name="default_notification_channel_id">Muki</string>
+    <!--Scheme -->
+    <string name="schema_name">muki</string>
+    <string name="schema_name_test">mukitest</string>
+    <!-- Common -->
+    <string name="CM_Test">Test</string>
+    <string name="CM_Choose">請選擇</string>
+    <string name="CM_Caution">警告</string>
+    <string name="CM_Search">搜尋</string>
+    <string name="CM_Sure">確認</string>
+    <string name="CM_Know">我知道了</string>
+    <string name="CM_Cancel">取消</string>
+    <string name="CM_Delete">刪除</string>
+    <string name="CM_ADelete">已刪除</string>
+    <string name="CM_Back">返回</string>
+    <string name="CM_LongPressDelete">長按此項目刪除</string>
+    <string name="CM_GetList">看清單</string>
+    <string name="CM_Loading">Loading</string>
+    <string name="CM_Done">完成</string>
+    <string name="CM_New">新增</string>
+    <string name="CM_Save">儲存</string>
+    <string name="CM_Name">名稱</string>
+    <string name="CM_Pwd">密碼</string>
+    <string name="CM_Update">更新</string>
+    <string name="CM_Next">下一步</string>
+    <string name="CM_OK">OK</string>
+    <string name="CM_AM">上午\u0020</string>
+    <string name="CM_PM">下午\u0020</string>
+    <string name="CM_Notify">提醒</string>
+    <string name="CM_Developing">開發中</string>
+    <string name="CM_NextLine3">\n\n\n</string>
+    <string name="CM_Hint_Leave">再按一下離開</string>
+    <string name="CM_Open">開啟</string>
+    <string name="CM_Close">關閉</string>
+    <string name="CM_Continue">繼續</string>
+    <string name="CM_Leave">離開</string>
+    <string name="CM_Rename">重命名</string>
+    <string name="CM_SettingCompleted">設定完成</string>
+    <string name="CM_ClickHereToAdd">點擊此新增</string>
+    <string name="CM_RetryLater">請稍後再重試</string>
+    <string name="CM_Option">選填</string>
+    <string name="CM_Searching">搜尋中</string>
+    <string name="CM_Success">成功</string>
+    <string name="CM_Failed">失敗</string>
+    <string name="CM_DetectError">偵測到錯誤</string>
+    <string name="CM_Image">影像</string>
+
+    <!--Error -->
+    <string name="ERR_ProcessData">處理資料時發生錯誤</string>
+    <string name="ERR_UpdateView">更新畫面時發生錯誤</string>
+    <string name="ERR_PrepareData">準備資料時發生錯誤</string>
+    <string name="ERR_ChangePage">切換頁面時發生錯誤</string>
+    <string name="ERR_LostInfo">偵測到遺失資訊</string>
+    <string name="ERR_NotSupport">不支援此功能</string>
+    <string name="ERR_Search">搜尋發生錯誤</string>
+    <string name="ERR_Delete">刪除發生錯誤</string>
+    <string name="ERR_UnknownMode">未知模式</string>
+    <string name="ERR_FreqTooFast">訪問頻率過快</string>
+    <string name="ERR_ListInitError">清單初始化錯誤</string>
+    <string name="ERR_InitError">初始化錯誤</string>
+    <string name="ERR_IncompleteInfo">資料不完整</string>
+    <string name="ERR_ErrorAlert">發生錯誤</string>
+    <string name="ERR_ErrorNotOpen">尚未開放</string>
+    <string name="ERR_ConnectTimeOut">連接超時</string>
+    <string name="ERR_Connection">通訊發生錯誤</string>
+    <string name="ERR_NoInfo">沒有資訊</string>
+    <string name="ERR_CompleteAllInfo">請完成全部資訊</string>
+    <string name="ERR_DownloadImage">下載影像時發生錯誤</string>
+    <string name="ERR_RefreshTK">因安全原因中斷 請重新嘗試</string>
+    <string name="ERR_NoReturnID">遺失ID資訊</string>
+    <string name="ERR_ChromeNotInstall">請安裝Chrome瀏覽器</string>
+    <string name="ERR_CantUseCamera">無法啟用相機</string>
+    <string name="ERR_NoMailApp">您沒有安裝Email App</string>
+    <string name="ERR_NoPhoneApp">您沒有手機功能</string>
+    <string name="ERR_NotSupportBLE">您的裝置不支援BLE</string>
+    <string name="ERR_NeedBluetooth">使用功能必須開啟藍芽</string>
+    <!--SSL-->
+    <string name="ERR_SSLTitle">SSL 憑證錯誤</string>
+    <string name="ERR_SSLContent">無法驗證伺服器SSL憑證。\n仍要繼續嗎?</string>
+
+    <!--Fetch-->
+    <string name="Fetch_Get">取得資料中</string>
+    <string name="Fetch_Update">更新資料中</string>
+    <string name="Fetch_List">取得清單中</string>
+    <string name="Fetch_Setting">設定中</string>
+    <string name="Fetch_Updating">更新中</string>
+    <string name="Fetch_InsertSuccess">新增成功</string>
+    <string name="Fetch_InsertFailed">新增失敗</string>
+    <string name="Fetch_UpdateSuccess">修改成功</string>
+    <string name="Fetch_UpdateFailed">修改失敗</string>
+    <string name="Fetch_DeleteSuccess">刪除成功</string>
+    <string name="Fetch_DeleteFailed">刪除失敗</string>
+    <string name="Fetch_UpdateDBFailed">資料庫更新失敗</string>
+
+    <!--Fetch Error-->
+    <string name="Fetch_ER_Error">發生錯誤</string>
+    <string name="Fetch_ER_Fetching">取得資料時發生錯誤</string>
+    <string name="Fetch_ER_Unknown">發生未知狀況</string>
+    <string name="Fetch_ER_NoData">無資料</string>
+    <string name="Fetch_ER_NoThisData">無此資訊</string>
+    <string name="Fetch_ER_Acc">帳號錯誤</string>
+    <string name="Fetch_ER_Pwd">密碼錯誤</string>
+    <string name="Fetch_ER_Token">其他裝置已登入</string>
+    <string name="Fetch_ER_Set">設定失敗</string>
+    <string name="Fetch_ER_AF">驗證錯誤</string>
+    <string name="Fetch_ER_PwdAF">密碼錯誤</string>
+    <string name="Fetch_ER_ServerException">伺服器偵測到錯誤</string>
+    <string name="Fetch_ER_NotReceive">未接收到資料</string>
+    <string name="Fetch_ER_GetData">取得資訊發生錯誤</string>
+    <string name="Fetch_ER_SearchSQL">搜尋資料庫發生錯誤</string>
+    <string name="Fetch_ER_ConnectSQL">連結資料庫錯誤</string>
+    <string name="Fetch_ER_Processing">正在處理</string>
+
+    <!-- ActivityWeb -->
+    <string name="AWB_Title_UrlIsCopy">連結已複製</string>
+    <string name="AWB_Title_ShareUse">分享使用</string>
+    <string name="AWB_Title_UseChrome">在Chrome開啟</string>
+    <string name="AWB_Title_CopyUrl">複製連結</string>
+    <string name="AWB_Title_ShareBy">分享方式</string>
+
+    <!-- com.mukicloud.mukitest.JSInterface -->
+    <string name="JS_ERR_NoOfflineFile">沒有離線檔案</string>
+    <string name="JS_ERR_OpenLink">開啟連結錯誤</string>
+    <string name="JS_ERR_InstallGMap">請安裝GoogleMap</string>
+
+    <!-- SFile -->
+    <string name="SF_Hint_DownloadFinish">下載完成</string>
+    <string name="SF_Hint_DownloadFailed">下載失敗</string>
+
+    <!-- SPhoto -->
+    <string name="SP_Title_Crop">Crop</string>
+    <string name="SP_Title_Multi">Multi</string>
+    <string name="SP_Header_Next">Next</string>
+    <string name="SP_Foot_Photo">Album</string>
+    <string name="SP_Foot_Camera">Camera</string>
+    <string name="SP_ERR_NoPhotoSelect">沒有選擇任何相片</string>
+    <!-- SCamera -->
+    <string name="SC_Error_Process">Process image error</string>
+    <string name="SC_Error_SaveFailed">Save image failed</string>
+    <string name="SC_Error_OIR">Monitor image return is not set</string>
+
+    <!-- Share -->
+    <string name="SHR_ER_InstallWBV">請安裝瀏覽套件</string>
+
+    <!-- SLocService -->
+    <string name="SLS_OpenLoc">請先開啟定位功能</string>
+
+</resources>

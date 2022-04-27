@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fffdf7">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/ic_net_error" />
+
+    <Button
+        android:id="@+id/BT_DNR_Retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minWidth="150dp"
+        android:padding="10dp"
+        android:text="重試"
+        android:textSize="20sp"
+        android:textColor="#777"
+        android:background="@drawable/back_selector_white_gray"/>
+
+    <TextView
+        android:id="@+id/TV_DNR_ErrorCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/CM_TextSizeSmallC"
+        android:textColor="@color/colorGrayText"/>
+
+</LinearLayout>

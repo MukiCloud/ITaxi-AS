@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false" >愛接送</string>
+    <string name="schema_name">itaxi</string>
+    <string name="schema_name_test">itaxi</string>
+</resources>

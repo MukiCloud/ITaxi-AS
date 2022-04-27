@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/CM_MarginA"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_white_corner_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/IMV_MNU_Back"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_left_arrow"/>
+
+        <ImageView
+            android:id="@+id/IMV_MNU_Refresh"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_refresh"/>
+
+        <ImageView
+            android:id="@+id/IMV_MNU_Forward"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_right_arrow"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/CM_Margin5"
+        android:layout_marginBottom="@dimen/CM_Margin5"
+        android:background="@color/colorGrayLine"/>
+
+    <TextView
+        android:id="@+id/TV_MNU_OpenBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="@dimen/CM_Margin5"
+        android:text="@string/AWB_Title_UseChrome"
+        android:textColor="@color/colorGrayText"
+        android:textSize="@dimen/CM_TextSizeNormalB"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/CM_Margin5"
+        android:layout_marginBottom="@dimen/CM_Margin5"
+        android:background="@color/colorGrayLine"/>
+
+    <TextView
+        android:id="@+id/TV_MNU_CopyUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="@dimen/CM_Margin5"
+        android:text="@string/AWB_Title_CopyUrl"
+        android:textColor="@color/colorGrayText"
+        android:textSize="@dimen/CM_TextSizeNormalB"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/CM_Margin5"
+        android:layout_marginBottom="@dimen/CM_Margin5"
+        android:background="@color/colorGrayLine"/>
+
+    <TextView
+        android:id="@+id/TV_MNU_ShareBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_margin="@dimen/CM_Margin5"
+        android:text="@string/AWB_Title_ShareBy"
+        android:textColor="@color/colorGrayText"
+        android:textSize="@dimen/CM_TextSizeNormalB"/>
+
+</LinearLayout>

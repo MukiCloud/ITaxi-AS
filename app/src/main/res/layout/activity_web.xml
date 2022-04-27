@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LN_Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ActivityWeb">
+
+    <FrameLayout
+        android:id="@+id/FL_TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhiteE"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/IMV_Close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/CM_Margin5"
+            android:contentDescription="@string/CM_Test"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_cancel" />
+
+        <TextView
+            android:id="@+id/TV_Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorGrayText4"
+            android:textSize="@dimen/CM_TextSizeBig" />
+
+        <ImageView
+            android:id="@+id/IMV_Refresh"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/CM_Margin5"
+            android:contentDescription="@string/CM_Test"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_refresh" />
+
+    </FrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SR_Main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/LN_WebMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/WBV_Main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"/>
+
+            <FrameLayout
+                android:id="@+id/FL_WBV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlackText"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/LN_Foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiteE"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/IMV_Back"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/CM_Image"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_left_arrow" />
+
+        <ImageView
+            android:id="@+id/IMV_Forward"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/CM_Image"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_right_arrow" />
+
+        <ImageView
+            android:id="@+id/IMV_CopyUrl"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/CM_Image"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_copy" />
+
+        <ImageView
+            android:id="@+id/IMV_OpenBrowser"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/CM_Image"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_worldwide" />
+
+        <ImageView
+            android:id="@+id/IMV_Share"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/CM_Image"
+            android:padding="@dimen/CM_MarginA"
+            android:src="@drawable/ic_upload" />
+
+    </LinearLayout>
+</LinearLayout>
