@@ -11,6 +11,7 @@ import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -162,7 +163,9 @@ public class FCMService extends FirebaseMessagingService {
 //        PendingIntent pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_ONE_SHOT);
         PendingIntent pendingIntent;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-            pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_MUTABLE);
+            pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
+        } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+            pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_IMMUTABLE);
         } else {
             pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_ONE_SHOT);
         }

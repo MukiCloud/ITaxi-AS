@@ -3,6 +3,7 @@ package com.mukicloud.mukitest;
 public class TD {
     public static String MainURL = "https://muki1.muki001.com/website/index";
     public static boolean ShowDebugTos = true;
+    public static String TAG_Debug = "YenTek";
     //RQC
     public static final int RQC_FileChooser = 1;
     public static final int RQC_WriteSetting = 2;

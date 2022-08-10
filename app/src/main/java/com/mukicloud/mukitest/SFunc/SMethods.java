@@ -19,7 +19,6 @@ import android.net.NetworkInfo;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
-import android.util.Base64;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
@@ -41,7 +40,6 @@ import android.widget.Toast;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cazaea.sweetalert.SweetAlertDialog;
-import com.mukicloud.mukitest.Activity.ActivityWeb;
 import com.mukicloud.mukitest.R;
 import com.mukicloud.mukitest.TD;
 import com.pnikosis.materialishprogress.ProgressWheel;
@@ -67,8 +65,6 @@ import java.net.SocketException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -1512,16 +1508,6 @@ public class SMethods {
         return DF.format(Num);
     }
 
-    //ByteAry To Base64 String
-    public String ByteToBase64(byte[] Val) {
-        return new String(Base64.encode(Val, Base64.URL_SAFE | Base64.NO_WRAP | Base64.NO_PADDING), StandardCharsets.UTF_8);
-    }
-
-    //Base64 String To ByteAry
-    public byte[] Base64ToByte(String Str) {
-        return Base64.decode(Str, Base64.URL_SAFE | Base64.NO_WRAP | Base64.NO_PADDING);
-    }
-
     public String GetMacAddress(String interfaceName) {
         try {
             Enumeration<NetworkInterface> interfaces = NetworkInterface.getNetworkInterfaces();
@@ -1545,29 +1531,6 @@ public class SMethods {
         } catch (SocketException e) {
             return "";
         }
-    }
-
-    public String MD5(String Val) {
-        if (TextUtils.isEmpty(Val)) {
-            return "";
-        }
-        MessageDigest md5 = null;
-        try {
-            md5 = MessageDigest.getInstance("MD5");
-            byte[] bytes = md5.digest(Val.getBytes());
-            String result = "";
-            for (byte b : bytes) {
-                String temp = Integer.toHexString(b & 0xff);
-                if (temp.length() == 1) {
-                    temp = "0" + temp;
-                }
-                result += temp;
-            }
-            return result;
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        return "";
     }
 
     public void JSONValueAdder(JSONObject JOB, String Key, String Value) {

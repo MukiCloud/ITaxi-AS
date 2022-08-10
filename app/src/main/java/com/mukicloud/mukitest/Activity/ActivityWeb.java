@@ -22,9 +22,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.graphics.Bitmap;
 import android.net.MailTo;
 import android.net.Uri;
@@ -36,7 +34,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.PowerManager;
 import android.provider.Settings;
-import android.util.Base64;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.Gravity;
@@ -95,8 +92,6 @@ import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -119,6 +114,9 @@ public class ActivityWeb extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
         new CommentKeyBoardFix(this);//矯正鍵盤問題
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        }
         Act = this;
         SM = new SMethods(Act);
         SU = new SUpdater(Act);
@@ -133,8 +131,6 @@ public class ActivityWeb extends AppCompatActivity {
         GetFcmToken();
         ReadViewType();
         ReadProjectCode();
-        GetFBHashCode();
-        GetSHA1Key();
     }
 
     @Override
@@ -1158,64 +1154,6 @@ public class ActivityWeb extends AppCompatActivity {
             return Value;
         }
 
-    }
-
-    //Facebook======================================================================================
-    //http://oilcut123.pixnet.net/blog/post/360255329-%5Bcode%5D-fb-hash-key-%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95-%28%E4%B8%8D%E9%9C%80%E5%AE%89%E8%A3%9Dopenssl%29-key-ha
-    @SuppressLint("PackageManagerGetSignatures")
-    private void GetFBHashCode() {
-        PackageInfo info;
-        try {
-            info = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
-            for (android.content.pm.Signature signature : info.signatures) {
-                MessageDigest md;
-                md = MessageDigest.getInstance("SHA");
-                md.update(signature.toByteArray());
-                String KeyResult = new String(Base64.encode(md.digest(), 0));//String something = new String(Base64.encodeBytes(md.digest()));
-                Log.i("FBHash", KeyResult);//FB hash key
-                //Toast.makeText(this,"My FB Key is \n"+ KeyResult , Toast.LENGTH_LONG ).show();
-            }
-        } catch (PackageManager.NameNotFoundException e1) {
-            Log.e("name not found", e1.toString());
-        } catch (NoSuchAlgorithmException e) {
-            Log.e("no such an algorithm", e.toString());
-        } catch (Exception e) {
-            Log.e("exception", e.toString());
-        }
-    }
-
-    /**
-     * string like: SHA1, SHA256, MD5.
-     */
-    @SuppressLint("PackageManagerGetSignatures")
-    private void GetSHA1Key() {
-        try {
-            final String Key = "SHA1";
-            final PackageInfo info = Act.getPackageManager()
-                    .getPackageInfo(Act.getPackageName(), PackageManager.GET_SIGNATURES);
-
-            for (Signature signature : info.signatures) {
-                final MessageDigest md = MessageDigest.getInstance(Key);
-                md.update(signature.toByteArray());
-
-                final byte[] digest = md.digest();
-                final StringBuilder toRet = new StringBuilder();
-                for (int i = 0; i < digest.length; i++) {
-                    if (i != 0) toRet.append(":");
-                    int b = digest[i] & 0xff;
-                    String hex = Integer.toHexString(b);
-                    if (hex.length() == 1) toRet.append("0");
-                    toRet.append(hex);
-                }
-                Log.i("GetKey", Key + " " + toRet);
-            }
-        } catch (PackageManager.NameNotFoundException e1) {
-            Log.e("name not found", e1.toString());
-        } catch (NoSuchAlgorithmException e) {
-            Log.e("no such an algorithm", e.toString());
-        } catch (Exception e) {
-            Log.e("exception", e.toString());
-        }
     }
 
     //監聽鍵盤開啟收起=================================================================================

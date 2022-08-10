@@ -21,9 +21,9 @@
     <!-- 定位通知 -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <!--弹出横幅通知的权限-->
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <!-- 防止電池優化 -->
-    <uses-permission  android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -33,19 +33,19 @@
         android:name="android.hardware.telephony"
         android:required="false" />
 
-
     <application
         android:name=".SApplication"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_app"
-        android:roundIcon="@mipmap/ic_app_round"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:launchMode="singleTask"
-        android:requestLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="false"
+        android:roundIcon="@mipmap/ic_app_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
 
         <activity
             android:name=".Activity.ActivityAutoGo"
@@ -111,9 +111,9 @@
         <!--SForegroundService -->
         <service
             android:name=".SFunc.SForegroundService"
-            android:persistent="true"
             android:enabled="true"
-            android:exported="false" />
+            android:exported="false"
+            android:persistent="true" />
     </application>
 
 </manifest>
