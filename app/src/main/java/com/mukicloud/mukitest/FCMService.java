@@ -11,7 +11,6 @@ import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -207,9 +206,12 @@ public class FCMService extends FirebaseMessagingService {
 
     private void sendFCMServiceBroadCast(JSONObject ValueJOB) {
         try {
-            Intent intent = new Intent("FCMService");
-            if (ValueJOB != null) intent.putExtra("ValueJOB", ValueJOB.toString());
-            sendBroadcast(intent);
+            if (ValueJOB != null) {
+                SM.SPSaveStringData("FCMValueJOB", ValueJOB.toString());
+                Intent intent = new Intent("FCMService");
+                intent.putExtra("ValueJOB", ValueJOB.toString());
+                sendBroadcast(intent);
+            }
         } catch (Exception e) {
             SM.EXToast(R.string.ERR_ProcessData, "sendFCMServiceBroadCast", e);
         }

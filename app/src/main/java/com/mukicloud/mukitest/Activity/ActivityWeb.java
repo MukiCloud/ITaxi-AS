@@ -484,7 +484,7 @@ public class ActivityWeb extends AppCompatActivity {
             }
         }
         //Filter
-         if (CUrl.contains("://muki001.com")) {
+        if (CUrl.contains("://muki001.com")) {
             mainIsInDomain = true;
         } else if (CUrl.contains("paynow.com.tw")) {//Pay now 金流
             mainIsInDomain = true;
@@ -1216,13 +1216,20 @@ public class ActivityWeb extends AppCompatActivity {
                 try {
                     Bundle extras = intent.getExtras();
                     if (extras != null && extras.containsKey("ValueJOB")) {
-                        String ValueJOBStr = extras.getString("ValueJOB");
-                        JS.JSHandlerCallBack("notificationCallBack", ValueJOBStr);
+                        AutoCallBackFCMValueJOB();
                     }
                 } catch (Exception e) {
                     SM.DebugToast("FCMServiceBroadcastReceiver", e.getMessage());
                 }
             });
+        }
+    }
+
+    public void AutoCallBackFCMValueJOB() {
+        String FCMValueJOBStr = SM.SPReadStringData("FCMValueJOB");
+        if (FCMValueJOBStr.length() > 0) {
+            JS.JSHandlerCallBack("notificationCallBack", FCMValueJOBStr);
+            SM.SPClearStringData("FCMValueJOB");
         }
     }
 

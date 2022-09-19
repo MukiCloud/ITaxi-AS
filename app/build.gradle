@@ -4,11 +4,11 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 31
     defaultConfig {
         applicationId "com.mukicloud"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
@@ -26,7 +26,7 @@ android {
         ITaxi {
             keyAlias 'muki'
             keyPassword 'abcd1234'
-            storeFile file('D:/Dropbox/Android Project/Muki/MukiTest/MukiTest-AS/Keys/ITaxi/ITaxi.jks')
+            storeFile file('D:/Dropbox/ProjectAndroid/Muki/MukiTest/MukiTest-AS/Keys/ITaxi/ITaxi.jks')
             storePassword 'abcd1234'
         }
     }
@@ -45,8 +45,8 @@ android {
         itaxi_beta {
             dimension "version"
             applicationId "com.itaxi.passenger.android.beta"
-            versionCode 10
-            versionName "2.3.1 Beta"
+            versionCode 12
+            versionName "2.5.1 Beta"
             signingConfig signingConfigs.ITaxi
             ReNameApk("itaxi_beta")//Rename Build APK
         }
@@ -54,8 +54,8 @@ android {
         itaxi_prod {
             dimension "version"
             applicationId "com.itaxi.passenger.android.prod"
-            versionCode 10
-            versionName "2.3.1"
+            versionCode 12
+            versionName "2.5.1"
             signingConfig signingConfigs.ITaxi
             ReNameApk("itaxi_prod")//Rename Build APK
         }
@@ -63,7 +63,7 @@ android {
 
     buildTypes {
         release {
-            debuggable true
+            debuggable false
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'

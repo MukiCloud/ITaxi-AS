@@ -963,6 +963,16 @@ public class JSInterface {
         }
     }
 
+    //網頁端準備完成
+    @JavascriptInterface
+    public void appReady() {
+        try {
+            ((ActivityWeb) Act).AutoCallBackFCMValueJOB();
+        } catch (Exception e) {
+            SM.EXToast(R.string.CM_DetectError, "shouldStartLoadWith", e);
+        }
+    }
+
     //語音辨識========================================================================================
     private String CallBack_SPR;
     private boolean isRecognizing = false;
@@ -1007,6 +1017,7 @@ public class JSInterface {
             JSHandlerCallBackF("onSpeechRecognitionClose");//回報語音識別結束
         }
     }
+
     //onActivityResult==============================================================================
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         new Handler(Looper.getMainLooper()).post(() -> {
