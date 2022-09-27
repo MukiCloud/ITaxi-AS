@@ -11,8 +11,8 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 12,
-      "versionName": "2.5.1 Beta",
+      "versionCode": 13,
+      "versionName": "2.5.2 Beta",
       "outputFile": "itaxi_beta.apk"
     }
   ],

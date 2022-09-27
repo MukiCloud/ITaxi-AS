@@ -45,8 +45,8 @@ android {
         itaxi_beta {
             dimension "version"
             applicationId "com.itaxi.passenger.android.beta"
-            versionCode 12
-            versionName "2.5.1 Beta"
+            versionCode 13
+            versionName "2.5.2 Beta"
             signingConfig signingConfigs.ITaxi
             ReNameApk("itaxi_beta")//Rename Build APK
         }
@@ -54,8 +54,8 @@ android {
         itaxi_prod {
             dimension "version"
             applicationId "com.itaxi.passenger.android.prod"
-            versionCode 12
-            versionName "2.5.1"
+            versionCode 13
+            versionName "2.5.2"
             signingConfig signingConfigs.ITaxi
             ReNameApk("itaxi_prod")//Rename Build APK
         }
