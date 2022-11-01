@@ -369,18 +369,24 @@ public class ActivityWeb extends AppCompatActivity {
                     if (uri != null) {
                         String dataString = NFIntent.getDataString();
                         if (dataString != null) {
-                            TargetURL = dataString.substring(SM.IDStr(R.string.schema_name).length() + 3);
+                            if (dataString.startsWith(SM.IDStr(R.string.schema_name) + "://")) {
+                                TargetURL = dataString.substring(SM.IDStr(R.string.schema_name).length() + 3);
+                                WBV.loadUrl(TargetURL);
+                            } else if (dataString.startsWith(SM.IDStr(R.string.schema_name_test) + "://")) {
+                                TargetURL = dataString.substring(SM.IDStr(R.string.schema_name_test).length() + 3);
+                                WBV.loadUrl(TargetURL);
+                            }
                         }
                     }
                 } else if (Action.equals("Notify")) {
                     String GoUrl = NFIntent.getStringExtra("GoUrl");
                     if (GoUrl != null && GoUrl.length() > 0) {
                         TargetURL = GoUrl;
+                        WBV.loadUrl(TargetURL);
                     }
                 }
             }
         }
-        WBV.loadUrl(TargetURL);
     }
 
     public void CreateWBV(String Url) {
@@ -740,7 +746,7 @@ public class ActivityWeb extends AppCompatActivity {
         MainURL = NewMainUrl;
         new Handler(Looper.getMainLooper()).post(() -> {
             CreateWBV(MainURL);
-            ReadIntent(WBV_Main);
+            new Handler(Looper.getMainLooper()).postDelayed(() -> ReadIntent(WBV_Main), 2000);
         });
     }
 
