@@ -4,11 +4,11 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 32
     defaultConfig {
         applicationId "com.mukicloud"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
         ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
@@ -85,22 +85,22 @@ dependencies {
     implementation files('libs/MagicCrypt.jar')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'androidx.biometric:biometric:1.1.0'//Biometric
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.lifecycle:lifecycle-service:2.5.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.github.cazaea:sweet-alert-dialog:1.0.0'
-    implementation 'com.google.firebase:firebase-core:21.1.0'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
     implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
     implementation 'com.pnikosis:materialish-progress:1.7'
     implementation 'com.nightonke:boommenu:2.1.1'//https://github.com/Nightonke/BoomMenu
-    implementation 'com.airbnb.android:lottie:3.1.0'//https://github.com/airbnb/lottie-android
+    implementation 'com.airbnb.android:lottie:5.2.0'//https://github.com/airbnb/lottie-android
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
     implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3'//Keyboard
     // Add the Firebase Crashlytics SDK.
-    implementation 'com.google.firebase:firebase-crashlytics:18.2.12'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.2'
     //Firebase Auth
     implementation platform('com.google.firebase:firebase-bom:26.2.0')
     implementation 'com.google.firebase:firebase-auth'

@@ -61,18 +61,6 @@ public class FCMService extends FirebaseMessagingService {
                     if (Body.length() == 0) Body = NF.getBody();
                     if (Sound.length() == 0) Sound = NF.getSound();
                 }
-                //相容信鴿
-                try {
-                    if (FCMMap instanceof androidx.collection.ArrayMap) {
-                        androidx.collection.ArrayMap<String, String> XGMap = (androidx.collection.ArrayMap<String, String>) FCMMap;
-                        JSONObject XG_JOB = SM.JOBGetter(XGMap.get("content"));
-                        Title = GetXGData(XG_JOB, Title, "title");
-                        Body = GetXGData(XG_JOB, Body, "content");
-                        Vibrate = GetXGData(XG_JOB, Vibrate, "vibrate").equals("1") ? "True" : "False";
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
 
                 if (Title != null && Title.length() > 0) {
                     SendNotification(SVC, new NFHolder(Title, Body, Url, Vibrate, Sound, Badge));
@@ -159,10 +147,9 @@ public class FCMService extends FirebaseMessagingService {
         intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         intent.setAction("Notify");
         intent.putExtra("GoUrl", NFH.Url);
-//        PendingIntent pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_ONE_SHOT);
         PendingIntent pendingIntent;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-            pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
+            pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
             pendingIntent = PendingIntent.getActivity(Con, NFH.NotifyID, intent, PendingIntent.FLAG_IMMUTABLE);
         } else {
@@ -170,7 +157,7 @@ public class FCMService extends FirebaseMessagingService {
         }
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(Con, NOTIFICATION_CHANNEL_ID)
-                .setSmallIcon((SDKVersion >= Build.VERSION_CODES.LOLLIPOP && SDKVersion < Build.VERSION_CODES.N) ? R.drawable.ic_app : R.drawable.ic_app_white)
+                .setSmallIcon((SDKVersion >= Build.VERSION_CODES.LOLLIPOP && SDKVersion < Build.VERSION_CODES.N) ? R.drawable.ic_app_white : R.drawable.ic_app)
                 .setContentTitle(NFH.Title)
                 .setContentText(NFH.Body)
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(NFH.Body))
