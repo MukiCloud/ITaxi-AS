@@ -89,14 +89,6 @@ public class FCMService extends FirebaseMessagingService {
         }
     }
 
-    private String GetXGData(JSONObject XG_JOB, String Content, String ID) {
-        String Value = SM.JSONStrGetter(XG_JOB, ID);
-        if (Value != null && Value.length() > 0) {
-            Content = Value;
-        }
-        return Content;
-    }
-
     public static class NFHolder {
         int NotifyID;
         String Title, Body, Url, Vibrate, Sound, Badge;

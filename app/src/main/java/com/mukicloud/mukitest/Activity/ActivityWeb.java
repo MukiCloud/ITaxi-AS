@@ -93,7 +93,6 @@ import net.yslibrary.android.keyboardvisibilityevent.KeyboardVisibilityEvent;
 
 import org.json.JSONObject;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -287,13 +286,11 @@ public class ActivityWeb extends AppCompatActivity {
         WS.setGeolocationEnabled(true);
         WS.setGeolocationDatabasePath(Act.getFilesDir().getPath());
         WS.setAllowFileAccess(true);
-        WS.setAppCacheEnabled(true);
         WS.setDomStorageEnabled(true);
         WS.setDatabaseEnabled(true);
         WS.setLoadsImagesAutomatically(true);
         WS.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         WS.setCacheMode(WebSettings.LOAD_NO_CACHE); // load online by default
-        WS.setAppCachePath(getApplicationContext().getFilesDir().getAbsolutePath() + File.separator + "Cache");
         WS.setSaveFormData(false);//避免儲存敏感資料
         WS.setUserAgentString(WS.getUserAgentString() + "/AndroidMuki/Html5Plus");
     }

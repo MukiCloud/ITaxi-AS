@@ -4,14 +4,14 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.mukicloud"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
-        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
+        ndk.abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -21,6 +21,8 @@ android {
             keyPassword 'abcd1234'
             storeFile file('D:/Dropbox/Android Project/Muki/MukiTest/MukiTest.jks')
             storePassword 'abcd1234'
+            enableV3Signing = true
+            enableV4Signing = true
         }
 
         ITaxi {
@@ -28,7 +30,10 @@ android {
             keyPassword 'abcd1234'
             storeFile file('D:/Dropbox/ProjectAndroid/Muki/MukiTest/MukiTest-AS/Keys/ITaxi/ITaxi.jks')
             storePassword 'abcd1234'
+            enableV3Signing = true
+            enableV4Signing = true
         }
+
     }
 
     flavorDimensions "version"
@@ -98,15 +103,13 @@ dependencies {
     implementation 'com.nightonke:boommenu:2.1.1'//https://github.com/Nightonke/BoomMenu
     implementation 'com.airbnb.android:lottie:5.2.0'//https://github.com/airbnb/lottie-android
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
-    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3'//Keyboard
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3'
+//Keyboard
     // Add the Firebase Crashlytics SDK.
     implementation 'com.google.firebase:firebase-crashlytics:18.3.2'
-    //Firebase Auth
-    implementation platform('com.google.firebase:firebase-bom:26.2.0')
-    implementation 'com.google.firebase:firebase-auth'
     // Recommended: Add the Firebase SDK for Google Analytics.
-    implementation 'com.google.firebase:firebase-messaging'
-    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
     //annotations
     implementation "com.android.support:support-annotations:28.0.0"
     //解決Android12 推播問題
