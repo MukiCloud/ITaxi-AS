@@ -81,7 +81,6 @@ import com.mukicloud.mukitest.JSInterface;
 import com.mukicloud.mukitest.R;
 import com.mukicloud.mukitest.SFunc.CommentKeyBoardFix;
 import com.mukicloud.mukitest.SFunc.SBiometric;
-import com.mukicloud.mukitest.SFunc.SFile;
 import com.mukicloud.mukitest.SFunc.SForegroundService;
 import com.mukicloud.mukitest.SFunc.SLocService;
 import com.mukicloud.mukitest.SFunc.SMethods;
@@ -101,7 +100,6 @@ import me.leolin.shortcutbadger.ShortcutBadger;
 public class ActivityWeb extends AppCompatActivity {
     public ActivityWeb Act;
     public SMethods SM;
-    public SFile SF;
     private SUpdater SU;
     public JSInterface JS;
     public CusJSInterface CJS;
@@ -122,8 +120,6 @@ public class ActivityWeb extends AppCompatActivity {
         SM = new SMethods(Act);
         SU = new SUpdater(Act);
         SB = new SBiometric(Act);
-        SF = new SFile(Act);
-        SF.DownloadHandler();
         //onCreate
         ShowWelcomePage(true);
         KeyboardListener();

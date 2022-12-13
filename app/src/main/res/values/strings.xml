@@ -133,10 +133,6 @@
     <string name="JS_ERR_OpenLink">開啟連結錯誤</string>
     <string name="JS_ERR_InstallGMap">請安裝GoogleMap</string>
 
-    <!-- SFile -->
-    <string name="SF_Hint_DownloadFinish">下載完成</string>
-    <string name="SF_Hint_DownloadFailed">下載失敗</string>
-
     <!-- SPhoto -->
     <string name="SP_Title_Crop">Crop</string>
     <string name="SP_Title_Multi">Multi</string>

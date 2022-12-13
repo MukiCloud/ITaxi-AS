@@ -67,11 +67,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47113eac-2005-44fc-86b6-b23e54226b07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_23_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__D.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_ybq_Android_SpinKit_1_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_23_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_nightonke_boommenu_2_1_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_pnikosis_materialish_progress_1_7_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_pnikosis_materialish_progress_1_7_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_yslibrary_keyboardvisibilityevent_keyboardvisibilityevent_3_0_0_RC3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_yslibrary_keyboardvisibilityevent_keyboardvisibilityevent_3_0_0_RC3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.unitTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/MagicCrypt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/Rfid.AsciiProtocol-2.5.0-release.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sphoto_edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/recyclerview_sphoto.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itaxi_prod/release/itaxi_prod.apk" beforeDir="false" afterPath="$PROJECT_DIR$/itaxi_prod/release/itaxi_prod.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itaxi_prod/release/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/itaxi_prod/release/output-metadata.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +197,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="MQS7N19328006024" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-22T01:22:53.664Z" />
     <property name="ExportApk.ApkPath" value="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS" />
-    <property name="ExportApk.BuildVariants" value="itaxi_betaRelease" />
+    <property name="ExportApk.BuildVariants" value="itaxi_prodRelease" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -406,13 +422,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565156135522</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Update">
-      <created>1635478551803</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1635478551803</updated>
     </task>
     <task id="LOCAL-00136" summary="Update">
       <created>1635919573515</created>
@@ -750,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669929255547</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="更新版本號">
+      <created>1669967196579</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1669967196579</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -815,24 +831,14 @@
     <MESSAGE value="更新startScanBeacon" />
     <MESSAGE value="Update" />
     <MESSAGE value="更新字體大小 不隨系統改變" />
-    <MESSAGE value="更新版本號" />
     <MESSAGE value="修復收到推播會重整的問題" />
     <MESSAGE value="更新套件 &amp; 移除部分危險權限" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新套件 &amp; 移除部分危險權限" />
+    <MESSAGE value="更新版本號" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新版本號" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFile.java</url>
-          <line>193</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFile.java</url>
-          <line>194</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SApplication.java</url>
           <line>23</line>
@@ -895,132 +901,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>668</line>
-          <option name="timeStamp" value="602" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>704</line>
-          <option name="timeStamp" value="616" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="635" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="636" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>152</line>
-          <option name="timeStamp" value="637" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>156</line>
-          <option name="timeStamp" value="638" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>98</line>
-          <option name="timeStamp" value="639" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="640" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="644" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>138</line>
-          <option name="timeStamp" value="645" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="646" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="647" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="648" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFileUtils.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="649" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>604</line>
-          <option name="timeStamp" value="688" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>596</line>
-          <option name="timeStamp" value="689" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>568</line>
-          <option name="timeStamp" value="691" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>649</line>
-          <option name="timeStamp" value="718" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>830</line>
+          <line>538</line>
           <option name="timeStamp" value="719" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>859</line>
+          <line>567</line>
           <option name="timeStamp" value="720" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>467</line>
-          <option name="timeStamp" value="724" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>555</line>
-          <option name="timeStamp" value="729" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>590</line>
-          <option name="timeStamp" value="732" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/SFunc/SFile.java</url>
-          <line>205</line>
-          <option name="timeStamp" value="742" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>856</line>
+          <line>564</line>
           <option name="timeStamp" value="763" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>870</line>
+          <line>578</line>
           <option name="timeStamp" value="766" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1035,97 +931,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>663</line>
+          <line>659</line>
           <option name="timeStamp" value="790" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>584</line>
-          <option name="timeStamp" value="791" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>525</line>
-          <option name="timeStamp" value="792" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>526</line>
-          <option name="timeStamp" value="793" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>527</line>
-          <option name="timeStamp" value="794" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>538</line>
-          <option name="timeStamp" value="795" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>543</line>
-          <option name="timeStamp" value="796" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>507</line>
-          <option name="timeStamp" value="797" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>516</line>
-          <option name="timeStamp" value="798" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>510</line>
-          <option name="timeStamp" value="799" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>512</line>
-          <option name="timeStamp" value="800" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>514</line>
-          <option name="timeStamp" value="801" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>592</line>
-          <option name="timeStamp" value="803" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>600</line>
-          <option name="timeStamp" value="806" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>665</line>
+          <line>661</line>
           <option name="timeStamp" value="811" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>560</line>
-          <option name="timeStamp" value="812" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>562</line>
-          <option name="timeStamp" value="813" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>550</line>
-          <option name="timeStamp" value="817" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>143</line>
+          <line>132</line>
           <option name="timeStamp" value="827" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1150,112 +966,107 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>603</line>
+          <line>599</line>
           <option name="timeStamp" value="892" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>157</line>
+          <line>146</line>
           <option name="timeStamp" value="894" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>170</line>
+          <line>159</line>
           <option name="timeStamp" value="895" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>884</line>
+          <line>592</line>
           <option name="timeStamp" value="898" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>248</line>
+          <line>237</line>
           <option name="timeStamp" value="899" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1146</line>
+          <line>1142</line>
           <option name="timeStamp" value="974" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>291</line>
+          <line>280</line>
           <option name="timeStamp" value="975" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>536</line>
-          <option name="timeStamp" value="981" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>739</line>
+          <line>735</line>
           <option name="timeStamp" value="984" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>789</line>
+          <line>497</line>
           <option name="timeStamp" value="995" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1212</line>
+          <line>1208</line>
           <option name="timeStamp" value="1049" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1213</line>
+          <line>1209</line>
           <option name="timeStamp" value="1050" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1215</line>
+          <line>1211</line>
           <option name="timeStamp" value="1051" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>733</line>
+          <line>729</line>
           <option name="timeStamp" value="1057" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>990</line>
+          <line>698</line>
           <option name="timeStamp" value="1059" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>1013</line>
+          <line>721</line>
           <option name="timeStamp" value="1061" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1397</line>
+          <line>1393</line>
           <option name="timeStamp" value="1071" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1433</line>
+          <line>1429</line>
           <option name="timeStamp" value="1081" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1211</line>
+          <line>1207</line>
           <option name="timeStamp" value="1083" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1160</line>
+          <line>1156</line>
           <option name="timeStamp" value="1092" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1151</line>
+          <line>1147</line>
           <option name="timeStamp" value="1100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1145</line>
+          <line>1141</line>
           <option name="timeStamp" value="1101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1285,7 +1096,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/JSInterface.java</url>
-          <line>939</line>
+          <line>647</line>
           <option name="timeStamp" value="1109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1295,17 +1106,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1253</line>
+          <line>1249</line>
           <option name="timeStamp" value="1113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>183</line>
+          <line>179</line>
           <option name="timeStamp" value="1117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>191</line>
+          <line>187</line>
           <option name="timeStamp" value="1118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1315,7 +1126,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1240</line>
+          <line>1236</line>
           <option name="timeStamp" value="1133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1325,7 +1136,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/mukicloud/mukitest/Activity/ActivityWeb.java</url>
-          <line>1111</line>
+          <line>1107</line>
           <option name="timeStamp" value="1137" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

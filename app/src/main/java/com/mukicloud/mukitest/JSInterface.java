@@ -20,35 +20,26 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.StatFs;
 import android.os.Vibrator;
 import android.provider.Settings;
 import android.speech.RecognizerIntent;
 import android.util.Log;
 import android.view.Gravity;
 import android.webkit.JavascriptInterface;
-import android.webkit.MimeTypeMap;
 import android.webkit.WebView;
 import android.widget.Toast;
 
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.FileProvider;
 
 import com.cazaea.sweetalert.SweetAlertDialog;
 import com.mukicloud.mukitest.Activity.ActivityWeb;
-import com.mukicloud.mukitest.SFunc.NFileUtils;
-import com.mukicloud.mukitest.SFunc.SFile;
 import com.mukicloud.mukitest.SFunc.SLocService;
 import com.mukicloud.mukitest.SFunc.SMethods;
-import com.mukicloud.mukitest.SFunc.SUploader;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -58,7 +49,6 @@ import me.leolin.shortcutbadger.ShortcutBadger;
 public class JSInterface {
     private final Activity Act;
     public SMethods SM;
-    private SFile SF;
     private WebView WBV;
     private final LocationManager LM;
 
@@ -74,7 +64,6 @@ public class JSInterface {
             ActivityWeb ActS = ((ActivityWeb) Act);
             Act.registerReceiver(ActS.JBR, new IntentFilter("JSB"));
             WBV = ActS.WBV_Main;
-            SF = ActS.SF;
         }
     }
 
@@ -464,287 +453,6 @@ public class JSInterface {
     }
 
     //File==========================================================================================
-    @JavascriptInterface
-    public void getDownloadList(String CallBackID, String DownloadList) {
-        try {
-            JSONArray DownloadListJA = SM.JAGetter(SM.JAGetter(DownloadList), 0);
-            if (DownloadListJA.length() > 0) {
-                SF.SetOnDownloadStatusListener(Status -> {
-                    JSONObject JOB = new JSONObject();
-                    SM.JSONValueAdder(JOB, "res_code", "1");
-                    JSHandlerCallBack(CallBackID, JOB);
-                });
-                SF.StartDownload(Act, DownloadListJA);
-            }
-        } catch (Exception e) {
-            SM.EXToast(R.string.ERR_PrepareData, "getDownloadList", e);
-        }
-    }
-
-    @JavascriptInterface
-    public void getFilesSize(String CallBackID) {
-        try {
-            //getTotalInternalMemorySize
-            File path = Environment.getDataDirectory();
-            StatFs stat = new StatFs(path.getPath());
-            long blockSize = stat.getBlockSizeLong();
-            long blockCount = stat.getBlockCountLong();
-            float TotalInternalMemorySize = (float) ((double) (blockCount * blockSize) / (1024 * 1024));
-
-            JSONObject JOB = new JSONObject();
-            JOB.put("TotalInternalMemorySize", TotalInternalMemorySize);
-            File FolderCache = Act.getExternalFilesDir("Cache");
-            if (FolderCache != null) {
-                float TotalFileSize = (float) ((double) SM.GetFolderSize(FolderCache) / (1024 * 1024));
-                JOB.put("TotalFileSize", TotalFileSize);
-            }
-            JSHandlerCallBack(CallBackID, JOB);
-        } catch (Exception e) {
-            SM.EXToast(R.string.ERR_PrepareData, "getFilesSize", e);
-        }
-    }
-
-    @JavascriptInterface
-    public void isFile(String CallBackID, String FileName) {
-        try {
-            JSONObject JOB = new JSONObject();
-            JOB.put("FileName", FileName);
-            File FolderCache = Act.getExternalFilesDir("Cache");
-            if (FolderCache != null) {
-                File file = new File(FolderCache, FileName);
-                JOB.put("Exist", file.exists());
-            } else {
-                JOB.put("Exist", false);
-            }
-            JSHandlerCallBack(CallBackID, JOB);
-        } catch (Exception e) {
-            SM.EXToast(R.string.ERR_PrepareData, "isFile", e);
-        }
-    }
-
-    @JavascriptInterface
-    public void openFile(String FileName) {
-        try {
-            File file = new File(Act.getExternalFilesDir("Cache"), FileName);
-            if (file.exists()) {
-                Uri uri = FileProvider.getUriForFile(Act, Act.getApplicationContext().getPackageName() + ".fileprovider", file);
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                String Mime = "*/*";
-                MimeTypeMap MTM = MimeTypeMap.getSingleton();
-                if (MTM.hasExtension(MimeTypeMap.getFileExtensionFromUrl(uri.toString()))) {
-                    Mime = MTM.getMimeTypeFromExtension(MimeTypeMap.getFileExtensionFromUrl(uri.toString()));
-                }
-                intent.setDataAndType(uri, Mime);
-                Act.startActivity(intent);
-            } else {
-                SM.UIToast(R.string.JS_ERR_NoOfflineFile);
-            }
-        } catch (ActivityNotFoundException e) {
-            SM.UIToast("您的裝置沒有可以開啟此檔案的應用");
-        } catch (Exception e) {
-            SM.EXToast(R.string.CM_DetectError, "openFile", e);
-        }
-    }
-
-    //下載到Download 資料夾
-    @JavascriptInterface
-    public void downloadUserFile(String FileUrl) {
-        new Thread() {
-            @Override
-            public void run() {
-                super.run();
-                try {
-                    if (Environment.getExternalStorageState() != null) {
-                        File FolderFile = new File(Environment.getExternalStorageDirectory() + "/Download");
-                        SFile.RunDownload = true;//允許開始下載
-                        SF.SetOnDownloadStatusListener(Status -> {
-                            if (Status.equals("3")) {
-                                SM.SWToast(R.string.SF_Hint_DownloadFinish, SweetAlertDialog.SUCCESS_TYPE);
-                            } else if (Status.equals("4")) {
-                                SM.SWToast(R.string.SF_Hint_DownloadFailed, SweetAlertDialog.ERROR_TYPE);
-                            }
-                        });
-                        SF.SFileDownloader(Act, FileUrl, FolderFile, true, false);
-                    }
-                } catch (Exception e) {
-                    SM.EXToast(R.string.ERR_ProcessData, "downloadFile", e);
-                } finally {
-                    SFile.RunDownload = false;//關閉允許下載
-                    SF.SProgressDialog(Act);//Close Progress
-                }
-            }
-        }.start();
-    }
-
-    @JavascriptInterface
-    public void downloadFile(String CallBackID, String FileUrl) {
-        new Thread() {
-            @Override
-            public void run() {
-                super.run();
-                try {
-                    if (Environment.getExternalStorageState() != null) {
-                        SFile.RunDownload = true;//允許開始下載
-                        SF.SetOnDownloadStatusListener(Status -> {
-                            try {
-                                if (Status.equals("3")) {
-                                    SM.SWToast(R.string.SF_Hint_DownloadFinish, SweetAlertDialog.SUCCESS_TYPE);
-                                    JSHandlerCallBack(CallBackID, new JSONObject().put("result_code", 1));//Success
-                                } else if (Status.equals("4")) {
-                                    SM.SWToast(R.string.SF_Hint_DownloadFailed, SweetAlertDialog.ERROR_TYPE);
-                                    JSHandlerCallBack(CallBackID, new JSONObject().put("result_code", 2));//Failed
-                                }
-                            } catch (Exception e) {
-                                SM.EXToast(R.string.ERR_ProcessData, "downloadFile", e);
-                            }
-                        });
-                        File FolderFile = Act.getExternalFilesDir("Cache");
-                        SF.SFileDownloader(Act, FileUrl, FolderFile, true, false);
-                        SF.SProgressDialog(Act);//Close Progress Dialog
-                    }
-                } catch (Exception e) {
-                    SM.EXToast(R.string.ERR_ProcessData, "downloadFile", e);
-                } finally {
-                    SFile.RunDownload = false;//關閉允許下載
-                    SF.SProgressDialog(Act);//Close Progress
-                }
-            }
-        }.start();
-    }
-
-    @JavascriptInterface
-    public void deleteSingleFile(String FilePath) {
-        try {
-            File DeleteFile = new File(Act.getExternalFilesDir("Cache"), FilePath);
-            if (DeleteFile.exists()) {
-                //noinspection ResultOfMethodCallIgnored
-                DeleteFile.delete();
-            }
-        } catch (Exception e) {
-            SM.EXToast(R.string.ERR_PrepareData, "deleteSingleFile", e);
-        }
-    }
-
-    @JavascriptInterface
-    public void deleteAllFiles() {
-        try {
-            File FolderCache = Act.getExternalFilesDir("Cache");
-            if (FolderCache != null) {
-                SM.DeleteRecursive(FolderCache);
-            }
-        } catch (Exception e) {
-            SM.EXToast(R.string.ERR_PrepareData, "deleteAllFiles", e);
-        }
-    }
-
-    private String uploadFileCID, uploadFileUrl;
-    private final String[] UploadMimeTypes = {"application/pdf", "image/*"};
-
-    @JavascriptInterface
-    public void uploadFile(String CallBackID, String UploadUrl) {
-        new Thread() {
-            @Override
-            public void run() {
-                super.run();
-                try {
-                    if (ActivityCompat.checkSelfPermission(Act, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                        ActivityCompat.requestPermissions(Act, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, TD.RQC_Permission);
-                        return;
-                    }
-                    uploadFileCID = CallBackID;
-                    uploadFileUrl = UploadUrl;
-                    Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                    intent.putExtra(Intent.EXTRA_LOCAL_ONLY, false);
-                    intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, false);
-                    intent.putExtra(Intent.EXTRA_MIME_TYPES, UploadMimeTypes);
-                    StringBuilder TypeDB = new StringBuilder();
-                    for (int cnt = 0; cnt < UploadMimeTypes.length; cnt++) {
-                        TypeDB.append(UploadMimeTypes[cnt]);
-                        if (cnt < UploadMimeTypes.length - 1) TypeDB.append("|");
-                    }
-                    intent.setType(TypeDB.toString());
-                    Intent destIntent = Intent.createChooser(intent, "選擇檔案");
-                    //destIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                    Act.startActivityForResult(destIntent, TD.RQC_SelectFile);
-                } catch (Exception e) {
-                    SM.EXToast(R.string.ERR_ProcessData, "downloadFile", e);
-                } finally {
-                    SFile.RunDownload = false;//關閉允許下載
-                    SF.SProgressDialog(Act);//Close Progress
-                }
-            }
-        }.start();
-    }
-
-    private void uploadFileOnFileSelect(Intent data) {
-        try {
-            if (data != null) {
-                Uri uri = data.getData();
-                if (uri != null && uploadFileCID != null) {
-                    String FilePath = NFileUtils.getPath(Act, uri);
-                    if (FilePath.length() > 0) {
-                        //Upload
-                        new Thread() {
-                            @Override
-                            public void run() {
-                                super.run();
-                                try {
-                                    SM.SProgressDialog(true, "檔案上傳中", 1000);
-                                    SUploader SU = new SUploader();
-                                    JSONObject ResJOB = SU.SUpload(uploadFileUrl, null, FilePath);
-                                    boolean Success = SM.GetResultJOBAvailable(ResJOB);
-                                    JSONObject JOB = new JSONObject();
-                                    if (Success) {
-                                        ResJOB.remove("SResult");
-                                        JOB.put("result_code", 1);
-                                        JOB.put("files", SM.JOBGetter(ResJOB, "file"));
-                                    } else {
-                                        JOB.put("result_code", 2);
-                                    }
-                                    JSHandlerCallBack(uploadFileCID, JOB);//Success:Failed
-                                } catch (Exception e) {
-                                    SM.EXToast(R.string.ERR_PrepareData, "transferWebDataUpload", e);
-                                } finally {
-                                    SM.SProgressDialog();
-                                }
-                            }
-                        }.start();
-                    } else {
-                        SM.UIToast(R.string.ERR_LostInfo);
-                    }
-                } else {
-                    SM.UIToast(R.string.ERR_LostInfo);
-                }
-            }
-        } catch (SecurityException e) {
-            SM.EXToast("錯誤的匯入方式", "transferWebData_Security", e);
-        } catch (Exception e) {
-            SM.EXToast(R.string.ERR_PrepareData, "transferWebData", e);
-        }
-    }
-
-    //Offline=======================================================================================
-    @JavascriptInterface
-    public void transferWebData(String UrlLink, JSONArray PathListJA) {
-        try {
-            //JSONArray PathListJA = SM.JAGetter("");
-            if (PathListJA.length() > 0) {
-                JSONArray DownloadListJA = new JSONArray();
-                for (int cnt = 0; cnt < PathListJA.length(); cnt++) {
-                    DownloadListJA.put(UrlLink + PathListJA.getString(cnt));
-                }
-                //Delete Old Data First
-                File FolderFile = Act.getExternalFilesDir("Cache");
-                if (FolderFile != null) SM.DeleteRecursive(FolderFile);
-                //StartDownload
-                SF.StartDownload(Act, DownloadListJA);
-                SM.SPSaveStringData("PreTransferWebTime", String.valueOf(System.currentTimeMillis()));
-            }
-        } catch (Exception e) {
-            SM.EXToast(R.string.ERR_PrepareData, "transferWebData", e);
-        }
-    }
 
     @JavascriptInterface
     public void getTransferDatetime(String CallBackID) {
@@ -1024,7 +732,6 @@ public class JSInterface {
             try {
                 switch (requestCode) {
                     case TD.RQC_SelectFile:
-                        uploadFileOnFileSelect(data);
                         break;
                     case TD.RQC_Speech:
                         speechRecognitionHandler(data);

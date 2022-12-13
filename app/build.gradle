@@ -87,9 +87,6 @@ android {
 }
 
 dependencies {
-    implementation files('libs/MagicCrypt.jar')
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'androidx.biometric:biometric:1.1.0'//Biometric
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
@@ -100,15 +97,13 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:21.1.1'
     implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
     implementation 'com.pnikosis:materialish-progress:1.7'
-    implementation 'com.nightonke:boommenu:2.1.1'//https://github.com/Nightonke/BoomMenu
     implementation 'com.airbnb.android:lottie:5.2.0'//https://github.com/airbnb/lottie-android
-    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    //Keyboard
     implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3'
-//Keyboard
     // Add the Firebase Crashlytics SDK.
     implementation 'com.google.firebase:firebase-crashlytics:18.3.2'
     // Recommended: Add the Firebase SDK for Google Analytics.
-    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.1'
     implementation 'com.google.firebase:firebase-analytics:21.2.0'
     //annotations
     implementation "com.android.support:support-annotations:28.0.0"
