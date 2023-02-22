@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.itaxi.passenger.android.beta",
+  "variantName": "itaxi_betaRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 13,
+      "versionName": "2.6.1 Beta",
+      "outputFile": "itaxi_beta.apk"
+    }
+  ],
+  "elementType": "File"
+}

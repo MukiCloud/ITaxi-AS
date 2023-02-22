@@ -21,10 +21,10 @@
           <option name="jvmTarget" value="1.8" />
           <option name="languageVersion" value="1.6" />
           <option name="apiVersion" value="1.6" />
-          <option name="pluginOptions">
+          <option name="pluginClasspaths">
             <array />
           </option>
-          <option name="pluginClasspaths">
+          <option name="pluginOptions">
             <array />
           </option>
           <option name="errors">
@@ -35,24 +35,19 @@
     </facet>
     <facet type="android" name="Android">
       <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="itaxi_prodRelease" />
-        <option name="ASSEMBLE_TASK_NAME" value="assembleItaxi_prodRelease" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compileItaxi_prodReleaseSources" />
-        <afterSyncTasks>
-          <task>generateItaxi_prodReleaseSources</task>
-        </afterSyncTasks>
+        <option name="SELECTED_BUILD_VARIANT" value="itaxi_betaRelease" />
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/itaxi_prod/res;file://$MODULE_DIR$/../../../app/src/release/res;file://$MODULE_DIR$/../../../app/src/itaxi_prodRelease/res;file://$MODULE_DIR$/../../../app/build/generated/res/google-services/itaxi_prod/release;file://$MODULE_DIR$/../../../app/build/generated/crashlytics/res/itaxi_prod/release;file://$MODULE_DIR$/../../../app/build/generated/res/rs/itaxi_prod/release;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/itaxi_prod/release" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/itaxi_beta/res;file://$MODULE_DIR$/../../../app/src/release/res;file://$MODULE_DIR$/../../../app/src/itaxi_betaRelease/res;file://$MODULE_DIR$/../../../app/build/generated/res/google-services/itaxi_beta/release;file://$MODULE_DIR$/../../../app/build/generated/crashlytics/res/itaxi_beta/release;file://$MODULE_DIR$/../../../app/build/generated/res/rs/itaxi_beta/release;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/itaxi_beta/release" />
         <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
-    <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/itaxi_prodRelease/classes" />
-    <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/itaxi_prodReleaseUnitTest/classes" />
+    <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/itaxi_betaRelease/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/itaxi_betaReleaseUnitTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../app">
       <excludeFolder url="file://$MODULE_DIR$/../../../app/.gradle" />

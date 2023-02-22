@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.itaxi.passenger.android.prod",
+  "variantName": "itaxi_prodRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 13,
+      "versionName": "2.6.1",
+      "outputFile": "itaxi_prod.apk"
+    }
+  ],
+  "elementType": "File"
+}
