@@ -50,7 +50,7 @@ android {
         itaxi_beta {
             dimension "version"
             applicationId "com.itaxi.passenger.android.beta"
-            versionCode 13
+            versionCode 15
             versionName "2.6.1 Beta"
             signingConfig signingConfigs.ITaxi
             ReNameApk("itaxi_beta")//Rename Build APK
@@ -59,7 +59,7 @@ android {
         itaxi_prod {
             dimension "version"
             applicationId "com.itaxi.passenger.android.prod"
-            versionCode 13
+            versionCode 15
             versionName "2.6.1"
             signingConfig signingConfigs.ITaxi
             ReNameApk("itaxi_prod")//Rename Build APK
@@ -68,7 +68,7 @@ android {
 
     buildTypes {
         release {
-            debuggable true
+            debuggable false
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
