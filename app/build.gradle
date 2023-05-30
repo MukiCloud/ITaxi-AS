@@ -34,6 +34,14 @@ android {
             enableV4Signing = true
         }
 
+        Nantou {
+            keyAlias 'muki'
+            keyPassword 'abcd1234'
+            storeFile file('D:/Dropbox/ProjectAndroid/Muki/MukiTest/MukiTest-AS/Keys/ITaxi/Nantou.jks')
+            storePassword 'abcd1234'
+            enableV3Signing = true
+            enableV4Signing = true
+        }
     }
 
     flavorDimensions "version"
@@ -61,7 +69,25 @@ android {
             applicationId "com.itaxi.passenger.android.prod"
             versionCode 15
             versionName "2.6.1"
-            signingConfig signingConfigs.ITaxi
+            signingConfig signingConfigs.Nantou
+            ReNameApk("nantou_prod")//Rename Build APK
+        }
+
+        nantou_beta {
+            dimension "version"
+            applicationId "hantek.nantou.passenger.android.beta"
+            versionCode 1
+            versionName "1.0.0 Beta"
+            signingConfig signingConfigs.Nantou
+            ReNameApk("nantou_beta")//Rename Build APK
+        }
+
+        nantou_prod {
+            dimension "version"
+            applicationId "hantek.nantou.passenger.android.prod"
+            versionCode 1
+            versionName "1.0.0"
+            signingConfig signingConfigs.Nantou
             ReNameApk("itaxi_prod")//Rename Build APK
         }
     }
@@ -84,6 +110,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    namespace 'com.mukicloud.mukitest'
 }
 
 dependencies {

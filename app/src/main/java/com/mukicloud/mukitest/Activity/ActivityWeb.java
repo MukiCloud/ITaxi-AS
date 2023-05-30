@@ -7,6 +7,8 @@ import static com.mukicloud.mukitest.FCMService.PrepareNotificationChannel;
 import static com.mukicloud.mukitest.TD.MainURL;
 import static com.mukicloud.mukitest.TD.PKG_ITaxi_Beta;
 import static com.mukicloud.mukitest.TD.PKG_ITaxi_Prod;
+import static com.mukicloud.mukitest.TD.PKG_Nantou_Beta;
+import static com.mukicloud.mukitest.TD.PKG_Nantou_Prod;
 
 import android.Manifest;
 import android.animation.Animator;
@@ -329,6 +331,10 @@ public class ActivityWeb extends AppCompatActivity {
             GoMainUrl("http://itaxi-develop.muki001.com/");
         } else if (ApplicationID.contains(PKG_ITaxi_Prod)) {
             GoMainUrl("https://itaxi.iot.gov.tw/PassengerApi/client/");
+        } else if (ApplicationID.contains(PKG_Nantou_Beta)) {
+            GoMainUrl("https://nantoui-taxi-dev.muki001.com");
+        } else if (ApplicationID.contains(PKG_Nantou_Prod)) {
+            GoMainUrl("https://nantoui-taxi-dev.muki001.com");
         } else {
             CreateWBV(MainURL);
             new Handler(Looper.getMainLooper()).postDelayed(() -> ReadIntent(WBV_Main), 2000);

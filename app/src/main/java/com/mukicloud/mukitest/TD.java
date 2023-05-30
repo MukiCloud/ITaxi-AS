@@ -24,4 +24,6 @@ public class TD {
     //Package
     public final static String PKG_ITaxi_Beta = "com.itaxi.passenger.android.beta";
     public final static String PKG_ITaxi_Prod = "com.itaxi.passenger.android.prod";
+    public final static String PKG_Nantou_Beta = "hantek.nantou.passenger.android.beta";
+    public final static String PKG_Nantou_Prod = "hantek.nantou.passenger.android.prod";
 }

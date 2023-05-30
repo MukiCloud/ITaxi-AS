@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "150255239774",
+    "project_id": "htsvc-tms-copy",
+    "storage_bucket": "htsvc-tms-copy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150255239774:android:6664fe6157dd08d509eacf",
+        "android_client_info": {
+          "package_name": "hantek.nantou.driver.prod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150255239774-ljua305512j12u6p658vh2eu7b0le4cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh3eDCsJh6BDUZ681pPBARyvdg8WKmQgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150255239774-ljua305512j12u6p658vh2eu7b0le4cc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "150255239774-pm55u8tcmb6ndh1nq42vivph8j738cph.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hantek.nantou.passenger.ios.prod"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150255239774:android:3d1d5ef4f17d1bf409eacf",
+        "android_client_info": {
+          "package_name": "hantek.nantou.passenger.android.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150255239774-ljua305512j12u6p658vh2eu7b0le4cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh3eDCsJh6BDUZ681pPBARyvdg8WKmQgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150255239774-ljua305512j12u6p658vh2eu7b0le4cc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "150255239774-pm55u8tcmb6ndh1nq42vivph8j738cph.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hantek.nantou.passenger.ios.prod"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150255239774:android:198a3ac5cf5daa2909eacf",
+        "android_client_info": {
+          "package_name": "hantek.nantou.passenger.android.prod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150255239774-ljua305512j12u6p658vh2eu7b0le4cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh3eDCsJh6BDUZ681pPBARyvdg8WKmQgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150255239774-ljua305512j12u6p658vh2eu7b0le4cc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "150255239774-pm55u8tcmb6ndh1nq42vivph8j738cph.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hantek.nantou.passenger.ios.prod"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150255239774:android:1a89af81e854901d09eacf",
+        "android_client_info": {
+          "package_name": "hantek.nantou.passenger.prod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150255239774-ljua305512j12u6p658vh2eu7b0le4cc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh3eDCsJh6BDUZ681pPBARyvdg8WKmQgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150255239774-ljua305512j12u6p658vh2eu7b0le4cc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "150255239774-pm55u8tcmb6ndh1nq42vivph8j738cph.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "hantek.nantou.passenger.ios.prod"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

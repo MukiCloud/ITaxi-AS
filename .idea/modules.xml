@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ITaxi-AS.iml" filepath="$PROJECT_DIR$/.idea/modules/ITaxi-AS.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ITaxi-AS.app.unitTest.iml" />
     </modules>
