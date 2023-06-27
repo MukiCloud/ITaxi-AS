@@ -66,24 +66,25 @@
     <last-search-timestamp>1565854422751</last-search-timestamp>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47113eac-2005-44fc-86b6-b23e54226b07" name="Default Changelist" comment="變更圖片">
-      <change afterPath="$PROJECT_DIR$/app/nantou_prod/release/nantou_prod.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/nantou_prod/release/nantou_prod.apk.idsig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/nantou_prod/release/output-metadata.json" afterDir="false" />
+    <list default="true" id="47113eac-2005-44fc-86b6-b23e54226b07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap-anydpi-v26/ic_app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap-anydpi-v26/ic_app_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap-anydpi-v26/ic_app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap-anydpi-v26/ic_app_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app_round.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/nantou_prod/release/app-nantou_prod-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/nantou_prod/release/app-nantou_prod-release.aab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/nantou_beta/res/drawable/back_welcome.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/drawable/back_welcome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/nantou_beta/res/drawable/ic_app.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/drawable/ic_app.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/nantou_prod/res/drawable/back_welcome.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/drawable/back_welcome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/nantou_prod/res/drawable/ic_app.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/drawable/ic_app.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RFCT3237P9V]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -158,7 +159,7 @@
     </file-type-list>
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="6cccc349-7799-46cf-a9c6-af0f297ec3bd" />
+    <option name="defaultAccountId" value="6e5b0777-00f4-477d-8919-8d43717006ba" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/build.gradle" root0="FORCE_HIGHLIGHTING" />
@@ -187,8 +188,8 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Dropbox/ProjectAndroid/Muki/ITaxi/ITaxi-AS/app/src/nantou_beta/res/drawable&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Dropbox/ProjectAndroid/Muki/ITaxi/ITaxi-AS/app/src/nantou_beta/res&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;ExportApk.BuildVariants&quot;: [
@@ -206,11 +207,11 @@
       <recent name="com.mukicloud.mukitest.Activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta\res\drawable" />
-      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_prod\res\drawable" />
+      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta\res" />
       <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta" />
-      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_prod" />
-      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src" />
+      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_prod\res\mipmap" />
+      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_prod\res" />
+      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta\res\drawable" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Dropbox\Android Project\Muki\MukiTest\MukiTest-AS\app\src\itaxi_beta\res\mipmap" />
@@ -398,13 +399,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565156135522</updated>
-    </task>
-    <task id="LOCAL-00141" summary="更新 陳立版本號">
-      <created>1636528206016</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1636528206021</updated>
     </task>
     <task id="LOCAL-00142" summary="更新 陳立版本號">
       <created>1636703320872</created>
@@ -742,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686133291963</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="變更南投愛行圖檔">
+      <created>1687246800817</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1687246800818</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -785,7 +786,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="新增iTaxi錄音權限" />
     <MESSAGE value="更新相容Android12推播&#10;更新語音識別服務" />
     <MESSAGE value="更新Beacon&#10;增加鍵盤監聽功能" />
     <MESSAGE value="itaxi 處理推播App白色問題 + 圓形icon&#10;onShoftKeyboardClose 修改邏輯為偵測到收起時通知JS&#10;新增功能 notificationCallBack &amp; enterForeground" />
@@ -810,7 +810,8 @@
     <MESSAGE value="變更版本號" />
     <MESSAGE value="新增 南投計程車" />
     <MESSAGE value="變更圖片" />
-    <option name="LAST_COMMIT_MESSAGE" value="變更圖片" />
+    <MESSAGE value="變更南投愛行圖檔" />
+    <option name="LAST_COMMIT_MESSAGE" value="變更南投愛行圖檔" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
