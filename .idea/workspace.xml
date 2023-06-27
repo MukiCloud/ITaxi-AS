@@ -67,16 +67,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47113eac-2005-44fc-86b6-b23e54226b07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap-anydpi-v26/ic_app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap-anydpi-v26/ic_app_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap-anydpi-v26/ic_app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap-anydpi-v26/ic_app_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app_round.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,26 +167,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ApkExportedModule&quot;: &quot;ITaxi-AS.app&quot;,
-    &quot;BundleExportedModule&quot;: &quot;ITaxi-AS.app&quot;,
-    &quot;ExportApk.ApkPathForITaxi-AS.app&quot;: &quot;D:\\Dropbox\\ProjectAndroid\\Muki\\ITaxi\\ITaxi-AS\\app&quot;,
-    &quot;ExportBundle.BundlePathForITaxi-AS.app&quot;: &quot;D:\\Dropbox\\ProjectAndroid\\Muki\\ITaxi\\ITaxi-AS\\app&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
-    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Dropbox/ProjectAndroid/Muki/ITaxi/ITaxi-AS/app/src/nantou_beta/res&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ApkExportedModule": "ITaxi-AS.app",
+    "BundleExportedModule": "ITaxi-AS.app",
+    "ExportApk.ApkPathForITaxi-AS.app": "D:\\Dropbox\\ProjectAndroid\\Muki\\ITaxi\\ITaxi-AS\\app",
+    "ExportBundle.BundlePathForITaxi-AS.app": "D:\\Dropbox\\ProjectAndroid\\Muki\\ITaxi\\ITaxi-AS\\app",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
+    "last_opened_file_path": "D:/Dropbox/ProjectAndroid/Muki/ITaxi/ITaxi-AS/app/src/nantou_beta/res",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ExportApk.BuildVariants&quot;: [
-      &quot;nantou_prodRelease&quot;
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "nantou_prodRelease"
     ]
   }
-}</component>
+}]]></component>
   <component name="PsdUISettings">
     <option name="BUILD_VARIANTS_TAB" value="Flavors" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
@@ -399,13 +389,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565156135522</updated>
-    </task>
-    <task id="LOCAL-00142" summary="更新 陳立版本號">
-      <created>1636703320872</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1636703320873</updated>
     </task>
     <task id="LOCAL-00143" summary="Add ShipGo &amp; Game4Fun">
       <created>1637570087414</created>
@@ -743,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687246800818</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="變更南投愛行圖檔">
+      <created>1687845321169</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1687845321169</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
