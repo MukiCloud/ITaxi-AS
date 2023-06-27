@@ -76,8 +76,8 @@ android {
         nantou_beta {
             dimension "version"
             applicationId "hantek.nantou.passenger.android.beta"
-            versionCode 3
-            versionName "1.0.2 Beta"
+            versionCode 4
+            versionName "1.0.3 Beta"
             signingConfig signingConfigs.Nantou
             ReNameApk("nantou_beta")//Rename Build APK
         }
@@ -85,8 +85,8 @@ android {
         nantou_prod {
             dimension "version"
             applicationId "hantek.nantou.passenger.android.prod"
-            versionCode 3
-            versionName "1.0.2"
+            versionCode 4
+            versionName "1.0.3"
             signingConfig signingConfigs.Nantou
             ReNameApk("itaxi_prod")//Rename Build APK
         }
