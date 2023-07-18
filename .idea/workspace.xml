@@ -67,18 +67,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47113eac-2005-44fc-86b6-b23e54226b07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/drawable/ic_app_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/ic_app-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/drawable/ic_app_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/nantou_prod/release/app-nantou_prod-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/nantou_prod/release/app-nantou_prod-release.aab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/nantou_beta/res/drawable/ic_app.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/nantou_beta/res/drawable/ic_app.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/nantou_prod/res/drawable/ic_app.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/nantou_prod/res/drawable/ic_app.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/nantou_prod/release/nantou_prod.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/nantou_prod/release/nantou_prod.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/nantou_prod/release/nantou_prod.apk.idsig" beforeDir="false" afterPath="$PROJECT_DIR$/app/nantou_prod/release/nantou_prod.apk.idsig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/nantou_prod/release/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/nantou_prod/release/output-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/itaxi_beta/res/mipmap-anydpi-v26/ic_app.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/itaxi_beta/res/mipmap-anydpi-v26/ic_app_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/itaxi_prod/mipmap-anydpi-v26/ic_app.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/itaxi_prod/mipmap-anydpi-v26/ic_app_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/itaxi_prod/mipmap/ic_app.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/itaxi_prod/res/mipmap/ic_app.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/itaxi_prod/mipmap/ic_app_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/itaxi_prod/res/mipmap/ic_app_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/itaxi_prod/mipmap/ic_app_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/itaxi_prod/res/mipmap/ic_app_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_app.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_app_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap-anydpi-v26/ic_app.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap-anydpi-v26/ic_app_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_beta/res/mipmap/ic_app_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap-anydpi-v26/ic_app.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap-anydpi-v26/ic_app_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/nantou_prod/res/mipmap/ic_app_round.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RFCT3237P9V]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[98863351394f5a3836]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -182,7 +207,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Dropbox/ProjectAndroid/Muki/ITaxi/ITaxi-AS/app/src/nantou_beta/res/drawable&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Dropbox/ProjectAndroid/Muki/ITaxi/ITaxi-AS/app/src/nantou_prod/res/drawable&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -201,13 +226,14 @@
       <recent name="com.mukicloud.mukitest.Activity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta\res\drawable" />
       <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_prod\res\drawable" />
-      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta\res" />
-      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta" />
+      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta\res\drawable" />
+      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_beta\res\mipmap" />
       <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_prod\res\mipmap" />
+      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\nantou_prod\res\mipmap-hdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dropbox\ProjectAndroid\Muki\ITaxi\ITaxi-AS\app\src\itaxi_prod\res" />
       <recent name="D:\Dropbox\Android Project\Muki\MukiTest\MukiTest-AS\app\src\itaxi_beta\res\mipmap" />
       <recent name="D:\Dropbox\Android Project\Muki\MukiTest\MukiTest-AS\app\src\toast\res\drawable" />
       <recent name="D:\Dropbox\Android Project\Muki\MukiTest\MukiTest-AS\app\src\freecome" />
@@ -393,13 +419,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565156135522</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Update">
-      <created>1637914628570</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1637914628571</updated>
     </task>
     <task id="LOCAL-00146" summary="Update">
       <created>1641915456102</created>
@@ -737,7 +756,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687849651524</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="變更南投愛行圖檔">
+      <created>1688719243317</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1688719243318</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
